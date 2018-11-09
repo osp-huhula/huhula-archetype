@@ -4,9 +4,44 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.osp-huhula.mvn</groupId>
-	<artifactId>huhula-archetype</artifactId>
+	<artifactId>mvn.huhula-archetype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>Huhula Maven Archetype [${project.version}]</name>
+	<url>https://github.com/osp-huhula/huhula</url>
+	<parent>
+		<groupId>com.github.osp-huhula</groupId>
+		<artifactId>huhula-super-pom</artifactId>
+		<version>J7.1.1.6</version>
+	</parent>
+	<organization>
+		<name>huhula</name>
+		<url>https://github.com/osp-huhula</url>
+	</organization>
+	<description>
+		Open-source Huhula Maven Archetype project
+	</description>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/osp-huhula/huhula-archetype</url>
+		<connection>scm:git:https://github.com/osp-huhula/huhula-archetype.git</connection>
+		<developerConnection>scm:git:https://github.com/osp-huhula/huhula-archetype.git</developerConnection>
+		<tag>J7.1.1.6</tag>
+	</scm>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>sonatype-snapshot</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>sonatype-release</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
